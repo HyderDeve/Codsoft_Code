@@ -1,10 +1,11 @@
 import random
+
 def play_game():
     user_choice=input("Enter Your Choice (rock/paper/scissors): ").lower()
     choices=["rock","paper","scissors"]
     computer_choice=random.choice(choices)
-
-    print(f"Computer Chose {computer_choice}")
+    print(f"Your Chose {user_choice}")
+    print(f"\nComputer Chose {computer_choice}")
 
     if user_choice == computer_choice:
         return "It's a tie!"
@@ -18,5 +19,11 @@ def play_game():
         return "Invalid input. Please Choose rock, paper, or scissors."
 
 
-result= play_game()
-print(result)
+while(True):
+    result= play_game()
+    print(result)
+    cont=input("\nDo you want to continue? Yes/No").lower()
+    if cont=="yes":
+        continue
+    elif(cont=="no"):
+        break
