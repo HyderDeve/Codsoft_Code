@@ -4,7 +4,7 @@ def play_game():
     user_choice=input("Enter Your Choice (rock/paper/scissors): ").lower()
     choices=["rock","paper","scissors"]
     computer_choice=random.choice(choices)
-    print(f"Your Chose {user_choice}")
+    print(f"Your Choice {user_choice}")
     print(f"\nComputer Chose {computer_choice}")
 
     if user_choice == computer_choice:
